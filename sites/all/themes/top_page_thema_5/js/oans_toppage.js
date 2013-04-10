@@ -36,7 +36,7 @@
   };
 
 jQuery(function(){
-var $container = jQuery('.content');
+var $container = jQuery('#zone-content');
 $container.isotope({
 	 itemSelector: '.node-article',
 	// resizable: false,
