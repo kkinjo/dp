@@ -986,7 +986,7 @@ body.single article.node-article .field-name-body,
 body.page article.node-article .field-name-body {
 	padding:0 40px 30px 40px;
 	}
-article.node-article .meta {
+article.node-article .meta .submitted{
 	border-top:1px dotted #C2CFCC;
 	padding:5px 15px;
 	}
@@ -1065,7 +1065,7 @@ body.single .field-name-body.clearfix form input[type="submit"]{
 .edit .ico {
 	background-position:-14px -141px;
 	}
-.tags .ico {
+.field-name-field-tags .ico {
 	background-position:-14px -113px;
 	width:13px;
 	}
@@ -1494,7 +1494,7 @@ ol.commentlist article.comment {
 .node-article.sticky.corner-stamp .meta .cats .ico{
 	background-position: -18px -248px;
 }
-.node-article.sticky.corner-stamp .meta .tags .ico{
+.node-article.sticky.corner-stamp .meta .field-name-field-tags .ico{
 	background-position: -18px -261px;
 }
 .node-article.sticky.corner-stamp .meta .edit .ico{
