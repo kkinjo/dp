@@ -464,14 +464,14 @@ body {
 a#logo-area:link {
 	text-decoration:none;
 	}
-#logo-wrapper .logo-img{
+.branding-data .logo-img{
 	display:inline;
 	float:left;
 	}
-#logo-wrapper .logo-img {
+.branding-data .logo-img {
 	margin-right:10px;
 	}
-#logo-wrapper .logo-txt  {
+.branding-data .site-name-slogan  {
 	overflow:hidden;
 	}
 #site-name {
@@ -1587,16 +1587,16 @@ body.error404 #content {
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-		#logo-wrapper .logo-img, #logo-wrapper .logo-txt {
+		.branding-data .logo-img, .branding-data .site-name-slogan {
 			display:block;
 			float:none;
 		}
-		#logo-wrapper { text-align:center; }
+		.branding-data { text-align:center; }
 		#site-name { line-height:1.3; }
 		#site-slogan { line-height:1.3; }
 	
 		#site-name { margin-top:0; }
-		.logo-txt { margin-bottom:10px; }
+		.site-name-slogan { margin-bottom:10px; }
 		
 		#interaction-sec {  
 			float: none;
