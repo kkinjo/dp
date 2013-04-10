@@ -435,8 +435,8 @@ article.node-article, .sm-top li a, .btn-top, .cancel-comment-reply a, .sticky.c
 	}
 
 #page-not-found-message h2,
-article.node-article .post-title,
-article.node-article .post-title a,
+article.node-article .node-title,
+article.node-article .node-title a,
 #page-not-found-message h3 a {
 	color:#FF6600;
 	}
@@ -945,7 +945,7 @@ body.page article.node-article:after {
 	bottom:-15px;
 	height:15px;
 	}
-article.node-article .post-title {
+article.node-article .node-title {
 	font-size:14px;
 	line-height:16px;
 	font-weight:bold;
@@ -953,16 +953,16 @@ article.node-article .post-title {
 	margin:0;
 	word-wrap:break-word;
 	}
-body.single article.node-article .post-title,
-body.page article.node-article .post-title {
+body.single article.node-article .node-title,
+body.page article.node-article .node-title {
 	font-size:20px;
 	padding:30px 40px;
 	line-height:24px;
 	}
-article.node-article .post-title a {
+article.node-article .node-title a {
 	text-decoration:none;
 	}
-article.node-article .post-title a:hover {
+article.node-article .node-title a:hover {
 	color:#666;
 	}
 article.node-article .featured-img {
@@ -1076,11 +1076,11 @@ body.single .entry.clearfix form input[type="submit"]{
 div.entry.clearfix p a{
 	color: #8AB7AC;
 	}
-#post-listing article.node-article .read-more {
+#post-listing article.node-article .node-readmore {
 	display:block;
 	padding:10px 0 0 0;
 	}
-#post-listing article.node-article .read-more a:hover{
+#post-listing article.node-article .node-readmore a:hover{
 	color:#666;
 }
 
@@ -1439,11 +1439,11 @@ ol.commentlist article.comment {
 	background-color: #8AB7AD;
     color: #FFFFFF;
 	}
-.node-article.sticky.corner-stamp .post-title a,
-.sticky.corner-stamp  .entry  .read-more a{
+.node-article.sticky.corner-stamp .node-title a,
+.sticky.corner-stamp  .entry  .node-readmore a{
 	color:#ffffff;
 }
-.sticky.corner-stamp  .entry  .read-more a{
+.sticky.corner-stamp  .entry  .node-readmore a{
 	color:#eee;
 }
 .sticky.corner-stamp  .entry  .page-link a {
@@ -1452,7 +1452,7 @@ ol.commentlist article.comment {
 
 .sticky.corner-stamp  .entry  .page-link a:hover,
 .node-article  .entry  .page-link a:hover,
-.sticky.corner-stamp  .entry  .read-more a :hover,
+.sticky.corner-stamp  .entry  .node-readmore a :hover,
 .sticky.corner-stamp  .ico a:hover{
 	color:#666;
 }
@@ -1462,7 +1462,7 @@ ol.commentlist article.comment {
 .col > a:hover{
     color: #666;
 }
-.node-article.sticky.corner-stamp .post-title {
+.node-article.sticky.corner-stamp .node-title {
 	padding:12;
 	border-bottom: 1px solid #75AB9F;
 }
