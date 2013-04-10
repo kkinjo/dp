@@ -978,12 +978,12 @@ body.single article.node-article .featured-img {
 	height:auto;
 	margin:0;
 	}
-article.node-article .entry {
+article.node-article .field-name-body {
 	padding:0 20px 10px 20px;
 	word-wrap: break-word;
 	}
-body.single article.node-article .entry,
-body.page article.node-article .entry {
+body.single article.node-article .field-name-body,
+body.page article.node-article .field-name-body {
 	padding:0 40px 30px 40px;
 	}
 article.node-article .meta {
@@ -998,12 +998,12 @@ body.single article.node-article .meta {
 body.single article.node-article .meta .col {
 	margin-right:10px;
 	}
-body.single .entry.clearfix form label{
+body.single .field-name-body.clearfix form label{
 	float: left;
 	margin-right: 15px;
 	width: 175px;}
 	
-body.single .entry.clearfix form input[type="submit"]{
+body.single .field-name-body.clearfix form input[type="submit"]{
 	margin-top: 18px;}
 
 	
@@ -1070,10 +1070,10 @@ body.single .entry.clearfix form input[type="submit"]{
 	width:13px;
 	}
 
-#post-listing article.node-article.entry p {
+#post-listing article.node-article.field-name-body p {
 	margin-bottom:0;
 	}
-div.entry.clearfix p a{
+div.field-name-body.clearfix p a{
 	color: #8AB7AC;
 	}
 #post-listing article.node-article .node-readmore {
@@ -1440,19 +1440,19 @@ ol.commentlist article.comment {
     color: #FFFFFF;
 	}
 .node-article.sticky.corner-stamp .node-title a,
-.sticky.corner-stamp  .entry  .node-readmore a{
+.sticky.corner-stamp  .field-name-body  .node-readmore a{
 	color:#ffffff;
 }
-.sticky.corner-stamp  .entry  .node-readmore a{
+.sticky.corner-stamp  .field-name-body  .node-readmore a{
 	color:#eee;
 }
-.sticky.corner-stamp  .entry  .page-link a {
+.sticky.corner-stamp  .field-name-body  .page-link a {
 	color:#eee;
 }
 
-.sticky.corner-stamp  .entry  .page-link a:hover,
-.node-article  .entry  .page-link a:hover,
-.sticky.corner-stamp  .entry  .node-readmore a :hover,
+.sticky.corner-stamp  .field-name-body  .page-link a:hover,
+.node-article  .field-name-body  .page-link a:hover,
+.sticky.corner-stamp  .field-name-body  .node-readmore a :hover,
 .sticky.corner-stamp  .ico a:hover{
 	color:#666;
 }
@@ -1477,7 +1477,7 @@ ol.commentlist article.comment {
 	color:#fff;
 	margin:0;
 	}
-.node-article.sticky.corner-stamp .entry{
+.node-article.sticky.corner-stamp .field-name-body{
 	padding:20px;
 	border-top:1px solid #9BC2B9;
 }
