@@ -52,7 +52,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline; }
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	article, aside, details, figcaption, figure, footer, header, menu, nav, section {
 		display: block; }
 	body {
 		line-height: 1; }
@@ -421,7 +421,7 @@ pre {
 	font-size:14px;
 	margin-left:20px;
 	}
-#site-title {
+#site-name {
 	color:#FE6E41;
 	}
 article.node-article, .sm-top li a, .btn-top, .cancel-comment-reply a, .sticky.corner-stamp, .post-navigation .wp-pagenavi a, .post-navigation .wp-pagenavi span {
@@ -444,7 +444,7 @@ article.node-article .node-title a,
 #comment-header h3,
 #comments-title,
 #comment-form-title,
-#site-description,
+#site-slogan,
 .widget .widget-title,
 #page-not-found-message h3,
 #reply-title {
@@ -457,7 +457,7 @@ article.node-article .node-title a,
 body {
 	background-color:#fff;
 	}
-#header {
+.zone-branding-wrapper {
 	padding:10px 0 0px 0;
 	border-bottom:1px dashed #C3DAD5;
 	}
@@ -474,13 +474,13 @@ a#logo-area:link {
 #logo-wrapper .logo-txt  {
 	overflow:hidden;
 	}
-#site-title {
+#site-name {
 	line-height:1;
 	margin:10px 0 0 0;
 	font-weight:bold;
 	text-transform:capitalize;
 	}
-#site-description {
+#site-slogan {
 	font-size:16px;
 	font-weight:bold;
 	line-height:1.2;
@@ -1592,10 +1592,10 @@ body.error404 #content {
 			float:none;
 		}
 		#logo-wrapper { text-align:center; }
-		#site-title { line-height:1.3; }
-		#site-description { line-height:1.3; }
+		#site-name { line-height:1.3; }
+		#site-slogan { line-height:1.3; }
 	
-		#site-title { margin-top:0; }
+		#site-name { margin-top:0; }
 		.logo-txt { margin-bottom:10px; }
 		
 		#interaction-sec {  
