@@ -1,10 +1,159 @@
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
-*/ 
+//==============================================================
+// CUSTOM SCRIPTS
+// Author: Sampression Themes  (http://sampression.com)
+// 2013
+// ==============================================================
+
+jQuery(document).ready(function() {
+// bug fix - post spacing issue  when image is set to 100%
+setTimeout(function(){jQuery(window).resize()},2000); // This triggers window resize 2 seconds after dom is ready
+
+// For Primary Navigation	
+var minHt = 28; // Minimum height for Navigation
+var ulHt = getTotalHt(jQuery('#primary-nav').find('ul')) || 28; // Getting the height of Navigation
+
+if( minHt < ulHt ) {
+	jQuery('#btn-nav-opt').show();
+	jQuery('#primary-nav .sixteen')
+	.animate({ 'height' : ulHt },300,function(){
+		jQuery('#btn-nav-opt').addClass('up');
+	})
+	.delay( 300)
+	.animate({ 'height' : minHt },1000,function(){
+		jQuery('#btn-nav-opt').removeClass('up');
+	});
+}
+
+	//==============================================================
+	// Toggle Height of the Primary Navigation
+	// =============================================================
+	jQuery('#btn-nav-opt').click(function(){
+			if(jQuery(this).hasClass('up')){
+				jQuery('#primary-nav .sixteen').animate({ 'height' : minHt } );
+				jQuery(this).removeClass('up');
+			}else{
+				jQuery('#primary-nav .sixteen').animate({ 'height' : ulHt });
+				jQuery(this).addClass('up');
+			}
+			return false;
+		});
+//==============================================================
+// WordPress specialist:
+// get Widget title as a widget class
+// ==============================================================
+
+jQuery('.widget').each( function(){
+	var widgetTitle = jQuery(this).find('.widget-title').text();
+	var widgetTitleSlug = widgetTitle.replace(/ /gi, "-");
+	widgetTitleSlug = widgetTitleSlug.toLowerCase();
+	widgetTitleSlug = "widget-" + widgetTitleSlug;
+	jQuery(this).addClass(widgetTitleSlug);
+});
 
 
+//==============================================================
+// get Sticky menu
+// ==============================================================
+jQuery(window).scroll( function() {
+	if (jQuery(window).scrollTop() > getTotalHt('#header')){
+		jQuery('#primary-nav').addClass('fixed');
+		jQuery('.btn-top').addClass('fixed');
+		jQuery('#content-wrapper').css('padding-top',minHt+30);
+		
+	} else {
+		jQuery('#primary-nav').removeClass('fixed');
+		jQuery('.btn-top').removeClass('fixed');
+		jQuery('#content-wrapper').css('padding-top','20px');
+	}
+} );
+jQuery('.menu-primary-menu-container select').change(function(){
+	var currentpage = jQuery(this).val();
+	jQuery(location).attr('href','?page_id='+currentpage);
+}); 
+jQuery('.menu-item').hover(
+	function(e){
+	e.stopPropagation();
+	jQuery(this).children('ul').fadeIn();
+	},
+	function(e){
+	e.stopPropagation();
+	jQuery(this).children('ul').delay(100).fadeOut();
+	}
+); 
 
+if(jQuery('#menu-primary-menu').length>0){
+	// Create the dropdown select element
+       jQuery("<select />",{"class":"top-menu-nav"}).insertAfter("#top-nav-mobile .nav-label");
+      // Create default option "Go to"
+      jQuery("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Go To"
+      }).appendTo(" #top-nav-mobile select");
+	  
+    // Populate dropdown with menu items
+      jQuery("nav#top-nav > ul ").children('li').each(function() {
+		   var el = jQuery(this), anchor = jQuery('> a', this);
+			   
+		   var fl = jQuery("<option />", {
+				"class" : "level-menu-1",
+				"value"   : anchor.attr("href"),
+				"text"    : anchor.text()
+		   });
+		   if(el.children('ul').length>0){
+				recursiveDropdown(fl, el.children('ul').children('li'), 1);
+		   }
+		   jQuery("#top-nav-mobile select").append(fl);
+      });
+	// To make dropdown actually work
+      jQuery("select.top-menu-nav").change(function() {
+        window.location = jQuery(this).find("option:selected").val();
+      }); 
+}
+	
+	  // recursive function for multilevel menu
+	  function recursiveDropdown(parentelem, elem, level){
+			var sl = '';
+			elem.each(function(){
+				var elm = jQuery(this), anchor = jQuery('> a', this), dash ='';
+				
+					for(var i = 0; i < level; i++) { dash += '-'; }
+				   if(elm.children('ul').length>0){
+						
+						parentelem.after(jQuery("<option />", {
+							"class" : "level-menu-"+level,
+						   "value"   : anchor.attr("href"),
+						   "text"    : dash+anchor.text()
+					   }));
+						recursiveDropdown(parentelem, elm.children('ul').children('li'), ++level);
+						
+				   }else{
+						parentelem.after(jQuery("<option />", {
+							"class" : "level-menu-"+level,
+						   "value"   : anchor.attr("href"),
+						   "text"    : dash+anchor.text()
+					   }));
+				   }
+				 
+			});
+			
+	  }
+	  
+	 
+	jQuery('#page_id').change(function(){
+		var currentpage = jQuery(this).val();
+		jQuery(location).attr('href','?page_id='+currentpage);
+	});/**/ 
+});
+// end ready function here.
+
+//==============================================================
+// Goto Perticular Point
+// ==============================================================
+function pageScroll(scrollPoint,time){ // obj: click object, scrollPoint:Location to reach on page scroll
+    var divOffset = jQuery(scrollPoint).offset().top;      
+    jQuery('html,body').delay(time||0).animate({scrollTop: divOffset}, 500); 
+}
 //==============================================================
 // jQuery isotope
 // ==============================================================
@@ -36,9 +185,9 @@
   };
 
 jQuery(function(){
-var $container = jQuery('.content');
+var $container = jQuery('#post-listing');
 $container.isotope({
-	 itemSelector: '.node-article',
+	 itemSelector: '.item',
 	// resizable: false,
 	 masonry : {
         cornerStampSelector: '.corner-stamp',
