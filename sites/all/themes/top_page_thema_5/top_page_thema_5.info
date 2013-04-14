@@ -352,4 +352,6 @@ settings[alpha_region_footer_second_weight] = '2'
 settings[alpha_region_footer_second_css] = ''
 version = '1.x'
 
+/*
 scripts[0] = 'js/oans_toppage.js'
+*/
