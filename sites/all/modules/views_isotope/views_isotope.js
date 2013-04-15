@@ -1,7 +1,7 @@
 (function($) {
   $(document).ready(function() {
   
-  var $container = $('#isotope-container');
+  var $container = $('#zone-content');
       
   $container.isotope({
     itemSelector: '.node-article',
