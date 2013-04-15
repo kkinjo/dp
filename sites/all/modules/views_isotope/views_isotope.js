@@ -1,7 +1,7 @@
 (function($) {
   $(document).ready(function() {
   
-  var $container = $('#zone-content');
+  var $container = $('.webmagagridviewwrapper');
       
   $container.isotope({
     itemSelector: '.node-article',
