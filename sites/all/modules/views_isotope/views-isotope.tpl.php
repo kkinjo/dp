@@ -45,7 +45,7 @@
       }
       
       ?>
-      <article class="isotope-element node-article isotope-element-<?php print $count; ?> <?php print $classlist; ?>" data-category="<?php print $classlist; ?>" <?php print $bgstyle ?>>
+      <article class="node-article isotope-element-<?php print $count; ?> <?php print $classlist; ?>" data-category="<?php print $classlist; ?>" <?php print $bgstyle ?>>
         <?php print $row; ?>
       </article>
       <?php 
