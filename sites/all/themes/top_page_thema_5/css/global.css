@@ -183,14 +183,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	.alignleft {float:left;}
 	.alignright {float:right;}
 	.aligncenter, div.aligncenter {	display: block;	margin-left: auto;	margin-right: auto;}
-	.navigation, .comment-navigation {display: block;clear:both;}
-	.navigation {	margin-top: 40px; padding-bottom: 70px;	}
+	/* .navigation, .comment-navigation {display: block;clear:both;} */
+	/* .navigation {	margin-top: 40px; padding-bottom: 70px;	} */
 	.comment-navigation {margin-top: 15px;	padding-bottom: 5px;}		
-	.navigation a, .comment-navigation a {}
-	.navigation a:hover, .comment-navigation a:hover {}
-	.attachment a { border:0}
-	.navigation a img {border-radius:0; border:none}
-	.navigation-image a {border:none}	
+	/* .navigation a, .comment-navigation a {} */
+	/* .navigation a:hover, .comment-navigation a:hover {}*/
+	/* .attachment a { border:0}*/
+	/* .navigation a img {border-radius:0; border:none} */
+	/* .navigation-image a {border:none}	*/
 
 /* images */
 	p img { padding: 0;}
@@ -1860,3 +1860,12 @@ article.node-article .featured-img {
 
 .img_for_posts_by_kkinjo {border: 1px solid black;margin-top: 1px;margin-bottom: 1px;width: 400px;}
 .a_black {color: red !important; text-decoration: underline !important;}
+
+#zone-menu-wrapper{
+height: 34px;
+margin: 0 auto 0 auto;
+display: block;
+background-color: #424242;
+}
+
+#main-menu li{line-height: 34px !important;}
