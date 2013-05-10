@@ -1868,8 +1868,9 @@ display: block;
 background-color: #424242;
 }
 
-#region-user-second ul{margin: 0 !important;}
-#region-user-second li{line-height: 34px !important; color: white;}
+#region-user-second ul{margin-bottom: 0px !important;}
+#region-user-second li{line-height: 34px !important;}
+#region-user-second a{color: white;}
 
 #block-menu-menu-level1-menue li {
 float: left;
