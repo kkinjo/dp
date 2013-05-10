@@ -430,7 +430,7 @@ article.node-article, .sm-top li a, .btn-top, .cancel-comment-reply a, .sticky.c
 	  border-radius: 5px;
 	  }
 	 
-#search-block-form input#searchsubmit, .sm-top a, #primary-nav ul.nav-listing li a span, .ico, .btn-top, select, #comments-header a, .commentlist span.pointer, #btn-nav-opt {
+#search-block-form input#edit-submit, .sm-top a, #primary-nav ul.nav-listing li a span, .ico, .btn-top, select, #comments-header a, .commentlist span.pointer, #btn-nav-opt {
 	background:url(images/sampression-css-sprite.png) no-repeat 0 0;
 	}
 
@@ -676,7 +676,7 @@ a#logo-area:link {
 #searchform:hover input {
 	border-color:#8AB7AD;
 	}
-#searchform:hover input#searchsubmit{
+#searchform:hover input#edit-submit{
 		border-color:#8AB7AD;
 		
 	}
