@@ -627,7 +627,7 @@ a#logo-area:link {
     z-index: 3;
 	}
 
-#interaction-sec {
+#region-search-region {
 	float:right;
 	text-align:center;
 	}
@@ -684,7 +684,7 @@ a#logo-area:link {
 	border-right:none;
 	width:190px;
 	padding-left:10px;
-	height:16px;
+	height:30px;
 	z-index:0;
 	
 	border-top-left-radius:5px;
@@ -1598,7 +1598,7 @@ body.error404 #content {
 		#site-name { margin-top:0; }
 		.site-name-slogan { margin-bottom:10px; }
 		
-		#interaction-sec {  
+		#region-search-region {  
 			float: none;
 			text-align: center;
 		}
