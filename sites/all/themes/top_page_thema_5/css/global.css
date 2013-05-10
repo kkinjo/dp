@@ -430,7 +430,7 @@ article.node-article, .sm-top li a, .btn-top, .cancel-comment-reply a, .sticky.c
 	  border-radius: 5px;
 	  }
 	 
-#search-block-forminput#searchsubmit, .sm-top a, #primary-nav ul.nav-listing li a span, .ico, .btn-top, select, #comments-header a, .commentlist span.pointer, #btn-nav-opt {
+#search-block-form input#searchsubmit, .sm-top a, #primary-nav ul.nav-listing li a span, .ico, .btn-top, select, #comments-header a, .commentlist span.pointer, #btn-nav-opt {
 	background:url(images/sampression-css-sprite.png) no-repeat 0 0;
 	}
 
@@ -656,7 +656,7 @@ a#logo-area:link {
 	width:235px;
 }
 
-#search-block-forminput, .sm-top a, #get-cats, select {
+#search-block-form input, .sm-top a, #get-cats, select {
  	display:block;
 	float:left;
 	position:relative;
@@ -667,7 +667,7 @@ a#logo-area:link {
 	-moz-box-shadow:2px 2px 3px #D2DFDC;
 	-webkit-box-shadow:2px 2px 3px #D2DFDC; 
 	}
-#search-block-forminput {
+#search-block-form input {
 	-moz-border-radius: 0;
 	  -webkit-border-radius: 0;
 	  border-radius: 0;
@@ -680,7 +680,7 @@ a#logo-area:link {
 		border-color:#8AB7AD;
 		
 	}
-#search-block-forminput#s {
+#search-block-form input#s {
 	border-right:none;
 	width:190px;
 	padding-left:10px;
@@ -696,7 +696,7 @@ a#logo-area:link {
       -webkit-border-bottom-left-radius:5px;
 	}
 
-#search-block-forminput#edit-submit{
+#search-block-form input#edit-submit{
 	background-color:#ffffff;
 	background-position:-10px -7px;
 	border-left:0;
@@ -1230,7 +1230,7 @@ body.page .meta .overflow-hidden {
 .sidebar-right .widget.widget_search .widget-entry {
 	margin-left:0;
 	}
-.sidebar-right #search-block-forminput#s {
+.sidebar-right #search-block-form input#s {
 	width:166px;
 	}
 
@@ -1579,7 +1579,7 @@ body.error404 #content {
 			left:5px;
 			background-position:0 -45px;
 			}
-		#search-block-forminput#s {
+		#search-block-form input#s {
 			width:135px;
 			}
 		
@@ -1625,7 +1625,7 @@ body.error404 #content {
 		.socialfour #search-block-form#s{ width:117px;}
 		#top-nav ul { float:none; text-align:center}
 		#top-nav ul li { float:none;}
-		#search-block-forminput#s { width:190px;}
+		#search-block-form input#s { width:190px;}
 		#top-nav ul li:hover ul { display:none; }
 		#top-nav{ display:none;}  /*do not show  navigation on small screen */
 		#top-nav-mobile{ display:block;} /* do not show mobile navigation on large screen */
@@ -1773,7 +1773,7 @@ article.node-article .featured-img {
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-		#search-block-forminput#s {
+		#search-block-form input#s {
 			width:120px;
 			}
 		
